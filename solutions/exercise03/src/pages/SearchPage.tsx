@@ -50,7 +50,7 @@ export default function SearchBar() {
         <div className="flex flex-col items-center justify-center h-64 opacity-50">
           <FontAwesomeIcon icon={faMagnifyingGlass} className="text-9xl m-12" />
           <p className="text-3xl font-semibold text-white">
-            Suche hier nach deinen Lieblingssongs oder -künstlern!
+            Suche hier nach deinen Lieblingssongs!
           </p>
         </div>
       ) : (

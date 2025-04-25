@@ -5,8 +5,10 @@ import { faCirclePlay, faCircleStop } from "@fortawesome/free-solid-svg-icons";
 import { AudioContext } from "../contexts/AudioContext";
 
 export default function SongOfTheDay() {
-  const [songOfTheDay, setSongOfTheDay] = useState<Track | null>(null);
-  const [loading, setLoading] = useState(false);
+  const [songOfTheDay, setSongOfTheDay] = useState<Track | undefined>(
+    undefined
+  );
+  const [loading, setLoading] = useState(true);
   const { play, current } = useContext(AudioContext);
 
   useEffect(() => {
@@ -16,7 +18,6 @@ export default function SongOfTheDay() {
         const res = await fetch("/api/track/3047560351");
         if (!res.ok) throw new Error("Chart-API error");
         const data = await res.json();
-        console.log(data);
         setSongOfTheDay(data);
         setLoading(false);
       } catch (err) {
@@ -29,8 +30,11 @@ export default function SongOfTheDay() {
   return (
     <div className="mb-4">
       <h1 className="text-2xl font-bold mb-4">Song des Tages</h1>
-      {loading && <p>Loading...</p>}
-      {songOfTheDay != null ? (
+      {loading ? (
+        <p>Loading...</p>
+      ) : songOfTheDay === undefined ? (
+        <p>Song konnte nicht geladen werden.</p>
+      ) : (
         <div className="flex gap-4 items-center">
           <img
             src={songOfTheDay.album.cover}
@@ -63,8 +67,6 @@ export default function SongOfTheDay() {
             />
           )}
         </div>
-      ) : (
-        <p>Song konnte nicht geladen werden.</p>
       )}
     </div>
   );

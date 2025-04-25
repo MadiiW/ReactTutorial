@@ -22,7 +22,7 @@ export default function ChartsPage() {
   return (
     <div className="mb-10">
       <SongOfTheDay />
-      <h1 className="text-2xl font-bold mb-4">Top 10 Charts</h1>
+      <h1 className="text-2xl font-bold mb-4 mt-8">Top 10 Charts</h1>
       <ul className="grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
         {topTracks.map((track, index) => (
           <SongCard
