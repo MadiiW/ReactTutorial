@@ -3,6 +3,7 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import SidebarLink from "./SidebarLink";
 import type { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import React from "react";
 
 
 const mockIcon: IconDefinition = { prefix: "fas", iconName: "house" } as IconDefinition;

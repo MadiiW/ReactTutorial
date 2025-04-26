@@ -1,4 +1,5 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
+import React from "react";
 import { render, screen, waitFor, fireEvent, cleanup } from "@testing-library/react";
 import SongOfTheDay from "./SongOfTheDay";
 import { AudioContext } from "../contexts/AudioContext";

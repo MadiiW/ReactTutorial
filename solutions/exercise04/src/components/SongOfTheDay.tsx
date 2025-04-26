@@ -3,6 +3,7 @@ import { Track } from "../types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCirclePlay, faCircleStop } from "@fortawesome/free-solid-svg-icons";
 import { AudioContext } from "../contexts/AudioContext";
+import React from "react";
 
 export default function SongOfTheDay() {
   const [songOfTheDay, setSongOfTheDay] = useState<Track | null>(null);
