@@ -43,7 +43,7 @@ In dieser Übung erweiterst du das Musikplayer-Projekt:
 1. **Repository klonen**
 
    ```bash
-   git clone [https://github.com/dein-benutzername/react-grundlagen-uebungen.git](https://github.com/MadiiW/ReactTutorial.git)
+   git clone https://github.com/MadiiW/ReactTutorial.git
    cd ReactTutorial
 2. **In ein Aufgaben- oder Lösungsverzeichnis wechseln**
 
