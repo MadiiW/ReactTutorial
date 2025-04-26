@@ -6,7 +6,7 @@ Dieses Repository unterstützt dich dabei, die wichtigsten Konzepte von **React*
 
 ## Voraussetzungen
 
-Vorausgesetzt werden grundlegende Kenntnisse in HTML, CSS und JavaScript sowie eine installierte Node.js Version 22.4 oder höher (Download: nodejs.org).
+Vorausgesetzt werden grundlegende Kenntnisse in HTML, CSS und JavaScript sowie eine installierte Node.js Version 22.4 oder höher [Download node.js](https://nodejs.org/en).
 
 ## Struktur des Repositories
 
