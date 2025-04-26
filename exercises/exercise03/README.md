@@ -1,54 +1,28 @@
-# React + TypeScript + Vite
+# Übung 3 - Routing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Zielsetzung
 
-Currently, two official plugins are available:
+In dieser Übung wiederholst und vertiefst du die Inhalte aus den Präsentationsfolien.  
+Du setzt praktisch um, was du über **Routing** gelernt hast.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Aufgabenstellung
 
-## Expanding the ESLint configuration
+Bevor du anfängst: Schaue dir den bestehenden Code gut an! Hilfestellungen zu den Aufgaben stehen im Code. Tailwind ist bereits installiert.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. **Installiere den React Router**
+2. **`SidebarLink` Component**
+   Passe die Component SidebarLink so an, dass man einen beliebigen Link damit definieren kann, welcher zeigt, ob er gerade aktiv ist, also ob man sich auf der entsprechenden Seite befindet.
+3. **Links in `AppLayout`**
+   Passe den `SidebarLink` in `AppLayout` so an, dass er deinen vorherigen Änderungen entspricht.
+4. **Kindrouten**
+   Stelle sicher, dass die Kindrouten in `AppLayout` angezeigt werden,
+5. **`AppLayout` benutzen**
+   Nutze in `App.tsx` einen Router mit dem `AppLayout` und einer Index-Seite (`ChartsPage`).
+   Später soll unter dem Pfad `/search` auch eine Search-Seite hinzugefügt werden .
+6. **`SearchPage`**
+   Erstelle eine `SearchPage`. Sie soll ein Inputfeld und einen "Suchen"-Button haben. Nach der Suche sollen die Ergebnisse mit auf der `ChartsPage` in einem Grid von `SongCards` angezeigt werden.
+   Füge dann den `SidebarLink` zur Search-Seite im `AppLayout` hinzu. Als Icon kannst du `faMagnifyingGlass` von FontAwesome benutzen.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Nach erfolgreichem Abschluss der Aufgabe sollte deine Anwendung ungefähr so aussehen wie das gezeigte Beispiel.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+![](./src/assets/app.png)
