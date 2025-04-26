@@ -1,54 +1,25 @@
-# React + TypeScript + Vite
+# Übung 2 – Komponentenlogik und CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Zielsetzung
 
-Currently, two official plugins are available:
+In dieser Übung wiederholst und vertiefst du die Inhalte aus den Präsentationsfolien.  
+Du setzt praktisch um, was du über **Props**, **Event Handling**, **Hooks** und **CSS Styling mit Tailwind** gelernt hast.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Aufgabenstellung
 
-## Expanding the ESLint configuration
+Bevor du anfängst: Schaue dir den bestehenden Code gut an (`App.tsx`, `ChartsPage.tsx`, `AudioContext.tsx`, `SongOfTheDay.tsx` und `types.ts`)! Hilfestellungen zu den Aufgaben stehen im Code. Tailwind ist bereits installiert.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. **AudioProvider**
+   Nutze den in `AudioContext.tsx` definierten AudioProvider in `App.tsx`, sodass alle Child Components den `AudioContext` benutzen können.
+2. **Einbindung Song des Tages**
+   Lasse den in `SongOfTheDay.tsx` definierten Song des Tages auf der `ChartsPage` anzeigen. Wenn du weißt wie, kannst du auch einen eigenen Song aussuchen der hier angezeigt wird. ;)
+   Du hast bei Aufgabe 1 + 2 alles richtig gemacht, wenn auf der Webseite ein Song angezeigt wird, den du abspielen kannst
+3. **API Call**
+   Schreibe in der `ChartsPage` einen API Call, der die aktuellen Top 10 Songs von Deezer abruft (Schnittstelle: `/api/chart/0/tracks?limit=10`).
+   Du hast alles richtig gemacht, wenn du die Namen der Titel auf der Webseite angezeigt bekommst.
+4. **SongCard Component**
+   Implementiere eine SongCard Component (mit CSS Styling). Angezeigt werden soll der Titel, Künstlername, das Album-Cover und ein Play/Stop-Button, der anzeigt, ob das aktuelle Lied gerade gespielt wird. Du kannst dich von `SongOfTheDay.tsx` inspirieren lassen. Als Props sollst du den Track und die Zahl der Platzierung in den Charts mitgeben.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Nach erfolgreichem Abschluss der Aufgabe sollte deine Anwendung ungefähr so aussehen wie das gezeigte Beispiel.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+![](./src/assets/app.png)
