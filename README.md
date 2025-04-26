@@ -9,12 +9,16 @@ Dieses Repository unterstützt dich dabei, die wichtigsten Konzepte von **React*
 Vorausgesetzt werden grundlegende Kenntnisse in HTML, CSS und JavaScript sowie eine installierte Node.js Version 22.4 oder höher ([Download node.js](https://nodejs.org/en)).
 
 ## Struktur des Repositories
+- `examples/`: React-Projekt mit Beispielen aus unserer Präsentation.  
+  → Hier kannst du die Beispiele aus der Präsentation nochmal genauer unter die Lupe nehmen.
 
 - `exercises/`: Enthält kleine React-Projekte mit Aufgabenstellungen.  
   → Hier kannst du die Aufgaben selbstständig bearbeiten.
 
 - `solutions/`: Enthält die fertigen Lösungen zu den jeweiligen Projekten.  
   → Nutze diese, um deine Ergebnisse zu vergleichen oder Hilfestellungen zu erhalten.
+
+- `slides/`: Enthält die Folien unserer Präsentation
 
 Jedes Projekt ist unabhängig und kann separat gestartet werden.
 
@@ -28,11 +32,11 @@ In dieser Übung lernst du:
 
 ### Exercise 2 & 3: Aufbau eines Musikplayers mit Deezer API
 In diesen zwei aufeinander aufbauenden Übungen entwickelst du eine kleine Musikplayer-Webanwendung:
-- **Suche** nach Songs über die Deezer API.
+- Unseren **Song of the Day** entdecken.
 - **Top-Charts** anzeigen lassen.
-- **Favorite Song of the Day** entdecken.
+- **Suche** nach Songs über die Deezer API.
 
-### Exercise 4: Unit Testing einer React-Komponente
+### Exercise 4: Unit Testing von React-Komponenten
 In dieser Übung erweiterst du das Musikplayer-Projekt:
 - Du schreibst **Unit Tests** für eine ausgewählte Komponente.
 - Du lernst die Grundlagen des Testens in React kennen und wie du die Stabilität deiner Anwendung überprüfst.
@@ -58,7 +62,3 @@ In dieser Übung erweiterst du das Musikplayer-Projekt:
 
    ```bash
    npm run dev
-
-## Hinweis
-
-Die Folien, die während des Workshops gezeigt werden, findest du ebenfalls hier im Repository im Ordner `slides/`.
