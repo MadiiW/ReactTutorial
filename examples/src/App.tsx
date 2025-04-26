@@ -12,6 +12,8 @@ import LinkPage from "./pages/LinkPage";
 import TailwindPage from "./pages/TailwindPage";
 import PokemonPage from "./pages/PokemonPage";
 import AuthPage from "./pages/AuthPage";
+import ClickButtonPage from "./pages/ClickButtonPage";
+import ClickCounterPage from "./pages/ClickCounterPage";
 
 export default function App() {
   const [isSignedIn, setIsSignedIn] = useState(false);
@@ -22,6 +24,8 @@ export default function App() {
         <Routes>
           <Route index element={<HomePage />} />
           <Route path="/counter" element={<CounterPage />} />
+          <Route path="/clickbutton" element={<ClickButtonPage />} />
+          <Route path="/clickcounter" element={<ClickCounterPage />} />
           <Route path="/auth" element={<AuthPage />} />
           <Route path="/pokemon" element={<PokemonPage />} />
           <Route path="/tailwind" element={<TailwindPage />} />
