@@ -19,6 +19,7 @@ export default function ClickCounter() {
   
 //     function handleClick() {
 //       count = count + 1;
+//       console.log(count);
 //     }
   
 //     return (
