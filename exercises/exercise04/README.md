@@ -1,54 +1,30 @@
-# React + TypeScript + Vite
+# Übung 2 – Unit-Test mit Vitest und Testing Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Zielsetzung
+In dieser Übung wiederholst und vertiefst du die Inhalte aus den Präsentationsfolien.  
+Du setzt praktisch um, was du über das Testen von React-Komponenten mit **Vitest** und der **React Testing Library** gelernt hast.
 
-Currently, two official plugins are available:
+## Aufgabenstellung
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Das Projekt ist bereits vollständig vorbereitet. Es enthält die Komponente `Counter` sowie alle nötigen Konfigurationen für das Testen mit **Vitest** und **React Testing Library**. Die `Counter`-Komponente ist ein einfacher Zähler, wie er im Theorieteil bereits mehrfach besprochen wurde. Deine Aufgabe ist es, **drei Unit-Tests für diese Komponente** zu schreiben. Die Tests sollen in der Datei `Counter.test.tsx` im Ordner `./src/components/` umgesetzt werden. Am Ende sollen **alle drei Tests erfolgreich durchlaufen** (`passed`).  Du brauchst **nichts an der `Counter`-Komponente selbst ändern** – wenn deine Tests korrekt sind, funktionieren sie mit der vorhandenen Komponente.
 
-## Expanding the ESLint configuration
+### Die drei Tests im Überblick
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. **Anfangszustand testen**  
+   Rendere die Komponente und überprüfe, ob der Text `"Count: 0"` im Dokument erscheint.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+2. **Interaktion testen**  
+   Rendere die Komponente, finde den Button mit der Rolle `"button"` und dem Namen `"Increment"`, simuliere einen Klick und überprüfe, ob danach `"Count: 1"` angezeigt wird.
+
+3. **Mehrfache Interaktion und Bedingung testen**  
+   Rendere die Komponente, finde den Button, simuliere **fünf Klicks** in einer Schleife und überprüfe, ob anschließend die Nachricht `"You've clicked a lot!"` im Dokument angezeigt wird.
+
+
+Führe die Tests mit folgendem Befehl aus:
+```bash
+npm run test
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Beachte: den Test kannst du mit npm run test ausführen.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Nach erfolgreichem Abschluss der Aufgabe sollte nach durchlaufen der Tests die Konsolen ausgabe wie folgt aussehen.

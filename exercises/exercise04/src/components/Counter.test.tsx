@@ -1,33 +1,20 @@
-
-import { render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
 import { describe, it, expect } from 'vitest';
-import { Counter } from './Counter';
 import '@testing-library/jest-dom';
 
+// TODO: Implementiere die Tests für die Counter-Komponente. Vergiss nicht, auch die nötigen Importe am Anfang der Datei hinzuzufügen.
 describe('Counter', () => {
- it('zeigt den Anfangszähler', () => {
-   render(<Counter />);
-   expect(screen.getByText('Count: 0')).toBeInTheDocument();
- });
+  it('zeigt den Anfangszähler', () => {
+    throw new Error('Test noch nicht implementiert');
+    // TODO: rendere die Counter-Komponente und überprüfe, ob der Text "Count: 0" im Dokument ist
+  });
 
- it('erhöht den Zähler bei Klick', async () => {
-   render(<Counter />);
-   const button = screen.getByRole('button', { name: 'Increment' });
+  it('erhöht den Zähler bei Klick', async () => {
+    throw new Error('Test noch nicht implementiert');
+    // TODO: Rendere die Counter-Komponente, finde den Button mit Rolle "button" und Name "Increment", simuliere einen Klick darauf und überprüfe, ob "Count: 1" angezeigt wird.
+  });
 
-   await userEvent.click(button);
-   expect(screen.getByText('Count: 1')).toBeInTheDocument();
- });
-
- it('zeigt eine Nachricht nach 5 Klicks', async () => {
-   render(<Counter />);
-   const button = screen.getByRole('button', { name: 'Increment' });
-
-   for (let i = 0; i < 5; i++) {
-     await userEvent.click(button);
-   }
-
-   expect(screen.getByText("You've clicked a lot!")).toBeInTheDocument();
- });
+  it('zeigt eine Nachricht nach 5 Klicks', async () => {
+    throw new Error('Test noch nicht implementiert');
+    // TODO: Rendere  die Counter-Komponente, finde den Button, simuliere 5 Klicks in einer Schleife und überprüfe, ob die Nachricht "You\'ve clicked a lot!" im Dokument ist.
+  });
 });
-
