@@ -14,7 +14,7 @@ Das Projekt ist bereits vollständig vorbereitet. Es enthält die Komponente `Co
    Rendere die Komponente und überprüfe, ob der Text `"Count: 0"` im Dokument erscheint.
 
 2. **Interaktion testen**  
-   Rendere die Komponente, finde den Button mit der Rolle `"button"` und dem Namen `"Increment"`, simuliere einen Klick und überprüfe, ob danach `"Count: 1"` angezeigt wird. Wie man den Button finden kann, kannst du hier nochmal in der Dokumentation nachlesen https://testing-library.com/docs/queries/about
+   Rendere die Komponente, finde den Button mit der Rolle `"button"` und dem Namen `"Increment"`, simuliere einen Klick und überprüfe, ob danach `"Count: 1"` angezeigt wird. Wie du den Button finden kannst, kannst du hier nochmal in der Dokumentation nachlesen https://testing-library.com/docs/queries/about
 
 3. **Mehrfache Interaktion und Bedingung testen**  
    Rendere die Komponente, finde den Button, simuliere **fünf Klicks** in einer Schleife und überprüfe, ob anschließend die Nachricht `"You've clicked a lot!"` im Dokument angezeigt wird.
