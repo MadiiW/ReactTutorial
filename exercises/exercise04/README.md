@@ -28,3 +28,5 @@ npm run test
 Beachte: den Test kannst du mit npm run test ausführen.
 
 Nach erfolgreichem Abschluss der Aufgabe sollte nach durchlaufen der Tests die Konsolen ausgabe wie folgt aussehen.
+
+![](./app.png)
