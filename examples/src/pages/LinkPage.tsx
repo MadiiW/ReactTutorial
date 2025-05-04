@@ -10,7 +10,6 @@ export default function LinkPage() {
         to="/links"
         style={({ isActive }) => ({
           fontWeight: isActive ? "bold" : "normal",
-          color: isActive ? "tomato" : "black",
           textDecoration: isActive ? "underline" : "none",
           marginRight: "0.5rem",
         })}
