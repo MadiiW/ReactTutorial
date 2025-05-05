@@ -1,5 +1,5 @@
 import ClickCounter from "../components/ClickCounter";
 
-export default function AuthPage() {
+export default function ClickCounterPage() {
   return <ClickCounter />;
 }

@@ -14,6 +14,7 @@ import PokemonPage from "./pages/PokemonPage";
 import AuthPage from "./pages/AuthPage";
 import ClickButtonPage from "./pages/ClickButtonPage";
 import ClickCounterPage from "./pages/ClickCounterPage";
+import UserListPage from "./pages/UserListPage";
 
 export default function App() {
   const [isSignedIn, setIsSignedIn] = useState(false);
@@ -35,6 +36,7 @@ export default function App() {
             <Route path="settings" element={<SettingsPage />} />
           </Route>
           <Route path="/links" element={<LinkPage />} />
+          <Route path="/userlist" element={<UserListPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>

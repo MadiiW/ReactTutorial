@@ -14,6 +14,7 @@ export default function LinkDirectory() {
     { path: "/dashboard", name: "Dashboard" },
     { path: "/dashboard/profile", name: "Profile" },
     { path: "/dashboard/settings", name: "Settings" },
+    { path: "/userlist", name: "UserList" },
     { path: "/links", name: "Links" },
   ];
 

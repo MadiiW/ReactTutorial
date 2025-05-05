@@ -1,5 +1,5 @@
 import ClickButton from "../components/ClickButton";
 
-export default function AuthPage() {
+export default function ClickButtonPage() {
   return <ClickButton />;
 }
