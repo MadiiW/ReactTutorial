@@ -25,7 +25,7 @@ Jedes Projekt ist unabhängig und kann separat gestartet werden.
 
 ## Übersicht der Aufgaben
 
-### [Exercise 1](https://github.com/MadiiW/ReactTutorial/tree/master/exercises/exercise01) Einstieg in React und JSX
+### [Exercise 1](https://github.com/MadiiW/ReactTutorial/tree/master/exercises/exercise01): Einstieg in React und JSX
 
 In dieser Übung lernst du:
 
