@@ -25,7 +25,7 @@ Jedes Projekt ist unabhängig und kann separat gestartet werden.
 
 ## Übersicht der Aufgaben
 
-### [Exercise 1:](https://github.com/MadiiW/ReactTutorial/tree/master/exercises/exercise01) Einstieg in React und JSX
+### [Exercise 1](https://github.com/MadiiW/ReactTutorial/tree/master/exercises/exercise01) Einstieg in React und JSX
 
 In dieser Übung lernst du:
 
@@ -33,7 +33,7 @@ In dieser Übung lernst du:
 - Wie du deine erste eigene Komponente erstellst.
 - Wie du **JSX** verwendest, um UI-Elemente mit JavaScript zu kombinieren.
 
-### [Exercise 2:](https://github.com/MadiiW/ReactTutorial/tree/master/exercises/exercise02) & [Exercise 3:](https://github.com/MadiiW/ReactTutorial/tree/master/exercises/exercise03): Aufbau eines Musikplayers mit Deezer API
+### [Exercise 2](https://github.com/MadiiW/ReactTutorial/tree/master/exercises/exercise02) & [Exercise 3](https://github.com/MadiiW/ReactTutorial/tree/master/exercises/exercise03): Aufbau eines Musikplayers mit Deezer API
 
 In diesen zwei aufeinander aufbauenden Übungen entwickelst du eine kleine Musikplayer-Webanwendung:
 
@@ -41,7 +41,7 @@ In diesen zwei aufeinander aufbauenden Übungen entwickelst du eine kleine Musik
 - **Top-Charts** anzeigen lassen.
 - **Suche** nach Songs über die Deezer API.
 
-### [Exercise 4:](https://github.com/MadiiW/ReactTutorial/tree/master/exercises/exercise04): Unit Testing von React-Komponenten
+### [Exercise 4](https://github.com/MadiiW/ReactTutorial/tree/master/exercises/exercise04): Unit Testing von React-Komponenten
 
 In dieser Übung erweiterst du das Musikplayer-Projekt:
 
